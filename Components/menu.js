@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 import { View, StyleSheet, Alert } from 'react-native';
 import { Button, Menu, Provider } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Import the icon library
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { AntDesign } from '@expo/vector-icons';
 
-const MenuExample = () => {
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+
+const HomeMenu = () => {
   const [visible, setVisible] = useState(false);
 
   const closeMenu = () => setVisible(false);
@@ -14,20 +18,12 @@ const MenuExample = () => {
     <Provider>
       <View style={styles.container}>
         {/* Replace the Button with the menu icon */}
-        <Icon
-          name="menu"
-          size={30}
-          color="black"
-          onPress={openMenu}
-          style={styles.menuIcon}
-        />
+        
         <Menu
           visible={visible}
           onDismiss={closeMenu}
           anchor={
-            <Button onPress={openMenu} mode="outlined">
-              Show menu
-            </Button>
+            <AntDesign name="menuunfold" onPress={openMenu} size={24} color="black" />
           }
         ><Menu.Item
         onPress={() => {
@@ -45,16 +41,21 @@ const MenuExample = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 50,
-    flexDirection: 'row',
-    justifyContent: 'center',
+  
+    paddingLeft:20,
+    marginRight:-200000,
+    marginTop:12,
+    width:100,
+    zIndex:9999,
+    
     height: 200,
   },
   menuIcon: {
     position: 'absolute',
     left: 10,
-    top: 10,
+    top: 60,
+    zIndex:99999
   },
 });
 
-export default MenuExample;
+export default HomeMenu;

@@ -8,7 +8,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function App() {
   return (<SafeAreaView>
     <View>
-      <HomeMenu></HomeMenu>
+      
    <HomePage></HomePage>
       <StatusBar style="auto" />
     </View></SafeAreaView>

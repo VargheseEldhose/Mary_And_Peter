@@ -9,7 +9,7 @@ function HomePage(){
     <Header></Header>
     </View>
    
-   <View style={{marginTop:40}}><Slider></Slider></View>
+   <View style={{marginTop:30}}><Slider></Slider></View>
    
  
    </View>      
