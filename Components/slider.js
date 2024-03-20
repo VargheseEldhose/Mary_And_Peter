@@ -16,8 +16,8 @@ const images = [
  function Slider (){
 
     return(
-        <SafeAreaView>
-         <SliderBox
+        <SafeAreaView style={{backgroundColor:'white'}}> 
+         <SliderBox 
   images={images}
   autoplay
   circleLoop

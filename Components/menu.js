@@ -8,31 +8,30 @@ import { AntDesign } from '@expo/vector-icons';
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-const HomeMenu = () => {
+const HomeMenu = ({navigation}) => {
   const [visible, setVisible] = useState(false);
 
   const closeMenu = () => setVisible(false);
   const openMenu = () => setVisible(true);
 
   return (
-    <Provider>
+    <Provider >
       <View style={styles.container}>
-        {/* Replace the Button with the menu icon */}
+      
         
-        <Menu
+        <Menu style={{}}
           visible={visible}
           onDismiss={closeMenu}
           anchor={
             <AntDesign name="menuunfold" onPress={openMenu} size={24} color="black" />
           }
-        ><Menu.Item
+        ><Menu.Item style={styles.menuIcon}
         onPress={() => {
-          Alert.alert('Action:', 'Save');
+         navigation.navigate('About')
         }}
         title="Save"
       />
-          {/* Menu items go here */}
-          {/* ... */}
+         
         </Menu>
       </View>
     </Provider>
@@ -43,18 +42,20 @@ const styles = StyleSheet.create({
   container: {
   
     paddingLeft:20,
-    marginRight:-200000,
+   
     marginTop:12,
-    width:100,
-    zIndex:9999,
+ 
+   
     
     height: 200,
   },
   menuIcon: {
-    position: 'absolute',
-    left: 10,
-    top: 60,
-    zIndex:99999
+   
+   color:'black',
+   backgroundColor:'white',
+   borderBlockColor:'grey',
+   margin:10
+
   },
 });
 
