@@ -12,7 +12,7 @@ const HomeMenu = ({navigation}) => {
   const [visible, setVisible] = useState(false);
 
   const closeMenu = () => setVisible(false);
-  const openMenu = () => setVisible(true);
+  const openMenu = () => {setVisible(true);console.log(2)}
 
   return (
     <Provider >

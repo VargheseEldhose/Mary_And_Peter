@@ -1,5 +1,5 @@
 import { SliderBox } from "react-native-image-slider-box";
-import {SafeAreaView, View} from 'react-native'
+import {SafeAreaView, View,Text} from 'react-native'
 // Define your image array source
 const images = [
   require("./Images/image1.jpg"),
@@ -16,16 +16,17 @@ const images = [
  function Slider (){
 
     return(
-        <SafeAreaView style={{backgroundColor:'white'}}> 
+        <SafeAreaView> 
          <SliderBox 
   images={images}
   autoplay
   circleLoop
-  sliderBoxHeight={500}
+  sliderBoxHeight={400}
   dotColor="#E91E63"
-  
+    
   // Other customization props...
 />
+
         </SafeAreaView>
     )
 
