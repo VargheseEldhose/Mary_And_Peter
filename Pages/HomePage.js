@@ -36,7 +36,7 @@ function HomePage({navigation}){
     
  </Text>
  
-    <Footer>j</Footer><Text>j</Text></ScrollView></View>
+    <Footer></Footer></ScrollView></View>
    
       
        
