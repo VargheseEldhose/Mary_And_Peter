@@ -2,6 +2,8 @@ import {SafeAreaView, View,Text} from 'react-native'
 import HomeMenu from './menu'
 
 function Header({navigation}){
+
+  
     return(
         <SafeAreaView >
             <View style={{display:'flex', flexDirection:'row'}}>
