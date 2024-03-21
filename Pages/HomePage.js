@@ -1,9 +1,9 @@
-import {SafeAreaView,View,Text,Platform} from 'react-native'
+import {SafeAreaView,View,Text,Platform,ScrollView} from 'react-native'
 import Slider from '../Components/slider'
 import Header from '../Components/Header'
 import { useFonts,DancingScript_400Regular } from '@expo-google-fonts/dancing-script'
 
-function HomePage({navigation}){
+function HomePage(){
 
     let [fontsLoaded, fontError] = useFonts({
         DancingScript_400Regular
@@ -15,7 +15,7 @@ function HomePage({navigation}){
     return(
    <View>
    
-   
+  
    
    <View style={{marginTop:0,zIndex:0}}><Slider></Slider></View>
    
@@ -27,7 +27,7 @@ function HomePage({navigation}){
     we will get back to you in 24 hours. God Bless, Mary
  </Text>
 
-            
+    
    </View>      
        
         )}
