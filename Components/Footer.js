@@ -6,7 +6,7 @@ function Footer(){
     return(
         <View>
 
-        <AntDesign name='instagram'></AntDesign>
+        <AntDesign name='instagram' size={30}></AntDesign>
         
         </View>
     )

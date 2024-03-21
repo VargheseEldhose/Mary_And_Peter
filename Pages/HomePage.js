@@ -14,16 +14,16 @@ function HomePage({navigation}){
         return null;
       }
     return(
-   <View style={{backgroundColor:'white'}}>
+   <View style={{backgroundColor:'white',flex:1}}>
+   
    
  <View style={{zIndex:99999999,padding:25}}>
        
        <Header navigation={navigation} ></Header>
  
    </View>
-   <View>
-   <ScrollView>
-   
+  
+   <ScrollView style={{flex:1}}>
    <View style={{marginTop:0,zIndex:0}}><Slider></Slider></View>
    
  <Text style={{fontFamily:'DancingScript_400Regular',fontSize:20,margin:30,padding:30,paddingBottom:20,backgroundColor:'#fff'}}>
@@ -36,9 +36,9 @@ function HomePage({navigation}){
     
  </Text>
  
-    <Footer></Footer></ScrollView></View>
+    <Footer>j</Footer><Text>j</Text></ScrollView></View>
    
-   </View>      
+      
        
         )}
 
